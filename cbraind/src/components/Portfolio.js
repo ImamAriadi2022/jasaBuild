@@ -24,6 +24,7 @@ const Portfolio = () => {
         {websites.map((site) => (
           <Col key={site.id} md={4} className="mb-4">
             <Card>
+              <Card.Img variant="top" src={site.imageUrls[0]} alt={site.name} />
               <Card.Body>
                 <Card.Title>{site.name}</Card.Title>
                 <Button variant="primary" onClick={() => handleShow(site)}>
