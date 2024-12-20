@@ -1,77 +1,111 @@
 .hero {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #6A0572, #E4007C);
+  color: white;
+  min-height: 90vh;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  background: linear-gradient(90deg, #FFD700, #FF5733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #FFD700, #FF5733);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #FF5733, #FFD700);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  padding: 12px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #6A0572;
+}
+
+.hero-image {
+  margin-top: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
     justify-content: space-between;
-    align-items: center;
-    padding: 60px 20px;
-    background: linear-gradient(90deg, #6A0572, #E4007C);
-    color: white;
-    min-height: 80vh;
   }
-  
+
   .hero-content {
+    flex: 1;
     max-width: 50%;
   }
-  
-  .hero-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .hero-title span {
-    background: linear-gradient(90deg, #FFD700, #FF5733);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    line-height: 1.5;
-  }
-  
+
   .hero-buttons {
-    display: flex;
+    flex-direction: row;
     gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+    justify-content: start;
   }
-  
-  .btn-primary {
-    background: linear-gradient(90deg, #FFD700, #FF5733);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+  .hero-image {
+    flex: 1;
+    margin-top: 0;
+    margin-left: 20px;
   }
-  
-  .btn-primary:hover {
-    background: linear-gradient(90deg, #FF5733, #FFD700);
-  }
-  
-  .btn-secondary {
-    background: transparent;
-    color: white;
-    padding: 12px 20px;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-secondary:hover {
-    background: white;
-    color: #6A0572;
-  }
-  
+
   .hero-image img {
-    max-width: 100%;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
-  
+}
