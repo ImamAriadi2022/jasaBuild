@@ -1,0 +1,36 @@
+.footer {
+    background: linear-gradient(90deg, #6A0572, #E4007C);
+    color: white;
+    padding: 20px 0;
+}
+
+.footer h5 {
+  margin-bottom: 20px;
+}
+
+.footer p, .footer ul, .footer li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer .social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+.footer .text-center {
+  margin-top: 20px;
+}

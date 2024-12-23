@@ -2,9 +2,11 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import About from './components/About';
+import Jasa from './components/Jasa'; 
 import Portfolio from './components/Portfolio';
-import HowToOrder from './components/HowToOrder';
 import Hero from './components/Hero';
+import Footer from './components/Footer';
+import Metode from './components/Metode';
 
 function App() {
   return (
@@ -12,8 +14,10 @@ function App() {
       <Header />
       <Hero/>
       <About />
+      <Jasa />
       <Portfolio />
-      <HowToOrder />
+      <Metode />
+      <Footer />
     </div>
   );
 }
