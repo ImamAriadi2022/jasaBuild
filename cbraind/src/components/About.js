@@ -8,7 +8,7 @@ const About = () => {
         <Col md={12}>
           <h2>About Us</h2>
           <p>
-          Selamat datang di website <strong>CreativeBrain</strong>. Kami menyediakan jasa pembuatan website e-commerce yang modern, cepat, dan responsif sesuai kebutuhan Anda.
+          Selamat datang di website <strong>CreativeBraind</strong>. Kami menyediakan jasa pembuatan website e-commerce yang modern, cepat, dan responsif sesuai kebutuhan Anda.
 
 Website kami dirancang dengan teknologi terkini untuk memastikan performa yang optimal dan keamanan yang terjamin. Dengan tampilan yang menarik dan user-friendly, kami membantu meningkatkan pengalaman pengguna sekaligus memaksimalkan potensi bisnis Anda.
 

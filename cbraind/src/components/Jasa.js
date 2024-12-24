@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Container, Row, Col } from 'react-bootstrap';
 import './Jasa.css';
 
 const jasaList = [
@@ -57,7 +57,6 @@ const Jasa = () => {
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
-                <Button variant="primary">Lihat Detail</Button>
               </Card.Body>
             </Card>
           </Col>
